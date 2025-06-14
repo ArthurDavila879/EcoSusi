@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .lato-thin-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .lato-black-italic {
+    font-weight: 900;
+    font-style: italic;
+  }
+
+
+/* Reset básico */
+/* Reset global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+/* Layout principal */
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Lado esquerdo - Imagem */
+.left-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-side img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Lado direito - Formulário */
+.right-side {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 50px 80px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form h1{
+  font-size: 36px;
+  text-align: center;
+}
+
+/* Botão retornar */
+#bt-tipo3 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  cursor: pointer;
+}
+
+.login_box {
+  text-align: center;
+}
+/* Formulário */
+.login_box h1 {
+  font-size: 50px;
+  margin-bottom: 40px;
+  font-weight: 900;
+}
+
+label {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 5px;
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 50%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Links abaixo dos campos */
+.login_links {
+  display: flex;
+  justify-content:space-around;
+  margin: 30px;
+  font-size: 15px;
+}
+
+.login_links .criar_conta {
+  color: #007bff;
+}
+
+.login_links .esqueci_senha {
+  color: red;
+}
+
+/* Botão enviar */
+#entrar{
+font-size: 20px;
+  color: white;
+  background-color: #668660;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  width: 250px;
+  margin: 5px;
+  transition: transform.2s; /* Animation */
+}
+#entrar:hover{
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/* Linha divisória */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+
+/* Botões sociais */
+.outra_opcao {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.outra_opcao img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-side {
+    height: 300px;
+  }
+
+  .right-side {
+    padding: 30px 40px;
+  }
+
+  .login_box h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  #bt-tipo3 {
+    position: absolute;
+    top: -250px;
+    padding: 8px 16px;
+  }
+}
+
+span, a{
+  font-size: 15px;
+}

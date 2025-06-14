@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Coleta de Lixo</title>
+  <link rel="stylesheet" href="principal.css"> 
+</head>
+<body>
+
+  <nav>
+      <div class="header">
+        <button id="bt5" onclick="voltar_login()">Retornar</button>
+        <div class="header-right">
+          <div class="search-container">
+             
+            <input type="text" placeholder="Pesquisar" id="pesquisar">
+<i class="fa-solid fa-magnifying-glass search-icon"></i>  
+          </div>
+          <button class="ajuda">Ajuda</button>
+          <button class="menu" onclick="abrirmenu()">☰</button>
+        </div>
+      </div>
+  </nav>
+
+
+  <div id="menuLateral" class="menu-lateral">
+  <span class="fechar" onclick="fecharmenu()">x</span>
+  <div class="perfil">
+      <i class="fa-solid fa-user" id="perfil"></i>
+    <p><strong>Nome Perfil</strong></p>
+  </div>
+  <button onclick="editarperfil()">✏️ Editar Perfil</button>
+  <button onclick="abrirhorarios()">➡️ Ver Horários</button>
+  <button onclick="abrirmapa()">🗺️ Mapa</button>
+  <button onclick="abrirreservas()">👤 Minhas reservas</button>
+  <button  onclick="marcarlocalizacao()">📍 Marcar localização</button>
+</div>
+
+
+  <!-- Conteúdo principal -->
+  <div class="container">
+
+    <h2>Horários de Funcionamento da Coleta de Lixo :</h2>
+
+    <button class="btn-horarios" onclick="abrirhorarios()">
+
+    
+     <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>   Clique para ver os horários de reciclagem
+    </button>
+
+    <p class="paragrafo-info">
+      Ao clicar, você poderá visualizar os dias e horários disponíveis para a coleta de materiais recicláveis na sua região, facilitando o descarte correto e contribuindo com o meio ambiente.
+    </p>
+
+
+
+    <!-- Mapa -->
+    <div class="mapa-section">
+      <h2>Veja o mapa:</h2>
+
+      <button class="mapa-botao" onclick="abrirmapa()">
+  <i class="fa-solid fa-map" style="color: #ffffff;"></i> Mapa
+      </button>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29921.502951993374!2d-40.31447039999999!3d-20.375142399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1749336007516!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Reservas -->
+    <div class="reservas-section">
+      <h2>Agendar ou Cancelar Reservas:</h2>
+
+      <button class="btn-reservas" onclick="abrirreservas()">
+    
+      <i class="fa-solid fa-user" style="color: #ffffff;"></i> Minhas reservas
+      </button>
+      <p>Acesse aqui todas as suas reservas de coleta de lixo, com detalhes sobre datas, horários e status. Você também pode cancelar agendamentos de forma rápida e prática.</p>
+    </div>
+<br><br>
+    <div class="marcar">
+      <h2>Marcar localização no mapa</h2>
+      <button class="btn-reservas" onclick="marcarlocalizacao()">
+        <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> Marcar Localização
+      </button>
+<p>Use este recurso para marcar no mapa o local exato onde o lixo está disponível para coleta, facilitando o trabalho das equipes e garantindo uma coleta eficiente.</p>
+    </div>
+
+  </div>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/f8b25465e9.js" crossorigin="anonymous"></script>
+</body>
+</html>

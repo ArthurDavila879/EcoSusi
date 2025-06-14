@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="repositorio.css" />
+     <link rel="stylesheet" href="horario.css"/>
+   
+   
+
+    <title>Horários</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="header">
+        <button id="bt-tipo3" onclick="voltar_para_principal()">
+          Retornar
+        </button>
+        <div class="header-right">
+          <div class="search-container">
+            <input type="text" placeholder="Pesquisar" id="pesquisar" />
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          </div>
+          <button id="bt-tipo" class="ajuda">Ajuda</button>
+          <button class="menu" onclick="abrirmenu()">☰</button>
+        </div>
+      </div>
+    </nav>
+
+     <div id="menuLateral" class="menu-lateral">
+  <span class="fechar" onclick="fecharmenu()">x</span>
+  <div class="perfil">
+      <i class="fa-solid fa-user" id="perfil"></i>
+    <p><strong>Nome Perfil</strong></p>
+  </div>
+ <button onclick="editarperfil()">✏️ Editar Perfil</button>
+  <button onclick="abrirhorarios()">➡️ Ver Horários</button>
+  <button onclick="abrirmapa()">🗺️ Mapa</button>
+  <button onclick="abrirreservas()">👤 Minhas reservas</button>
+  <button  onclick="marcarlocalizacao()">📍 Marcar localização</button>
+</div>
+
+    <div class="horarios-container">
+      <h2>HORÁRIOS DE FUNCIONAMENTO DAS EMPRESAS</h2>
+      <div class="empresas-lista">
+        <div class="empresa-card">
+          <img src="./arquivos/reciclagem.svg" alt="Reciclagem" />
+          <div class="empresa-info">
+            <h1>EMPRESA 1</h1>
+            <h1>00:00</h1>
+          </div>
+        </div>
+        <div class="empresa-card">
+          <img src="./arquivos/reciclagem.svg" alt="Reciclagem" />
+          <div class="empresa-info">
+            <h1>EMPRESA 2</h1>
+            <h1>00:00</h1>
+          </div>
+        </div>
+        <div class="empresa-card">
+          <img src="./arquivos/reciclagem.svg" alt="Reciclagem" />
+          <div class="empresa-info">
+            <h1>EMPRESA 3</h1>
+            <h1>00:00</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="https://kit.fontawesome.com/f8b25465e9.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="perfil.css">
+    <title>Perfil</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="header">
+                <button id="bt5" onclick="voltar_para_principal()">Retornar</button>
+                <div class="header-right">
+                    <div class="search-container">
+                        <input type="text" placeholder="Pesquisar" id="pesquisar">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>  
+                    </div>
+                    <button class="ajuda">Ajuda</button>
+                    <button class="menu" onclick="abrirmenu()">☰</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <aside id="menuLateral" class="menu-lateral">
+        <span class="fechar" onclick="fecharmenu()">x</span>
+        <div class="perfil">
+            <i class="fa-solid fa-user" id="perfil"></i>
+            <p><strong>Nome Perfil</strong></p>
+        </div>
+       <button onclick="editarperfil()">✏️ Editar Perfil</button>
+  <button onclick="abrirhorarios()">➡️ Ver Horários</button>
+  <button onclick="abrirmapa()">🗺️ Mapa</button>
+  <button onclick="abrirreservas()">👤 Minhas reservas</button>
+  <button  onclick="marcarlocalizacao()">📍 Marcar localização</button>
+    </aside>
+
+    <main class="perfil-container">
+        <section class="perfil-esquerda">
+            <article class="secao-info">
+            <div class="secao-titulo">
+                <h1>INFORMAÇÕES DO USUÁRIO</h1>
+                <button class="btn-editar">Editar</button>
+            </div>
+            <div class="info-card">
+                <div><p><strong>Nome:</strong></p> <p>Lorem ipsum</p></div>
+                <div><p><strong>Sobrenome:</strong></p> <p>Lorem ipsum</p></div>
+                <div><p><strong>Email:</strong></p> <p class="email">abcde@gmail.com</p></div>
+                <div><p><strong>CPF:</strong></p> <p>000.000.000-01</p></div>
+                <div><p><strong>Data de Nascimento:</strong></p> <p>xx/xx/xxxx</p></div>
+            </div>
+            </article>
+
+<div class="perfil-direita">
+  <div class="avatar-usuario">
+    <img src="./arquivos/usuario.png" alt="Foto do usuário" class="foto-usuario">
+  </div>
+  <button class="btn-editar-foto">Editar Foto</button>
+</div>
+
+            <article class="secao-info">
+            <div class="secao-titulo">
+                <h1>ENDEREÇO</h1>
+                <button class="btn-editar">Editar</button>
+            </div>
+            <div class="info-card">
+                <div><p><strong>Estado:</strong></p> <p>Lorem ipsum</p></div>
+                <div><p><strong>Cidade:</strong></p> <p>Lorem ipsum</p></div>
+                <div><p><strong>Bairro:</strong></p> <p>Lorem ipsum</p></div>
+                <div><p><strong>CEP:</strong></p> <p>00000-001</p></div>
+                <div><p><strong>Rua:</strong></p> <p>Lorem ipsum</p></div>
+                <div><p><strong>Apartamento:</strong></p> <p>Lorem ipsum</p></div>
+                <div><p><strong>Complemento:</strong></p> <p>Lorem ipsum</p></div>
+                <div><p><strong>Número:</strong></p> <p>123</p></div>
+                <div><p><strong>Contato:</strong></p> <p>(00) 0000-0000</p></div>
+            </div>
+            </article>
+        </section>
+
+   
+     
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/f8b25465e9.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

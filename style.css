@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .lato-thin-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .lato-black-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+
+  *{
+    font-family: "Lato", sans-serif;
+    margin: 0;
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+  }
+nav img{
+    width: 120px;
+    height: 70px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+li{
+list-style: none;
+margin: 8px;
+font-family:"Lato", sans-serif;
+}
+nav button{
+    font-size: 20px;
+    color: white;
+    background-color: #668660;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    width: 150px;
+    margin: 5px;
+    transition: transform.2s; /* Animation */
+}
+button:hover{
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+#bt3{
+    font-size: 20px;
+    border-radius: 5px;
+ background-color: white;
+    color:#668660;
+    border: solid #668660;
+}
+
+.container h1{
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  color: black;
+  text-align: center;
+  font-size: 60px;
+}
+.container img{
+  width: 100px;
+  position: relative;
+  height: 600px;
+  object-fit: cover;
+}
+.Sobre2{
+  background-color: #F3F2F0;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px;
+  width: 600px;
+  margin: 50px;
+  max-width: 95vw;
+}
+.Sobre2 h1{
+  font-size: 70px;
+}
+.Sobre2 p{
+  font-size: 30px;
+}
+#sobre{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+#sobre img{
+  width: 700px;
+  height: 400px;
+  max-width: 100%;
+  height: auto;
+}
+
+#imghome {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#imghome img {
+  max-width: 100%;
+  height: 100%;
+  display: block;
+}
+
+hr {
+  height: 1px;
+  background-color: black;
+  width: 80%;
+  margin: 40px auto;
+}
+.containerC{
+  text-align: center;
+  background-image: url(./arquivos/Fundo_empresas.png);
+  height: 700px;
+  font-size: 40px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.containerC img{
+  border-radius: 200px;
+  width: 300px;
+  max-width: 90vw;
+  height: auto;
+}
+
+footer{
+  padding: 10px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  background-color: #668660;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+footer img{
+  width: 80px;
+  max-width: 20vw;
+  height: auto;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .Sobre2 {
+    width: 90vw;
+    margin: 20px auto;
+  }
+  #sobre img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+  #imghome img {
+    max-width: 80vw;
+  }
+  .containerC {
+    height: auto;
+    font-size: 32px;
+  }
+  .containerC img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container h1 {
+    font-size: 36px;
+    left: 10%;
+    top: 20%;
+  }
+  .container img {
+    height: 300px;
+  }
+  .Sobre2 h1 {
+    font-size: 40px;
+  }
+  .Sobre2 p {
+    font-size: 18px;
+  }
+  #sobre img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+  #imghome {
+    flex-direction: column;
+    gap: 10px;
+  }
+  #imghome img {
+    max-width: 95vw;
+  }
+  .containerC {
+    font-size: 22px;
+  }
+  .containerC img {
+    width: 120px;
+  }
+  footer img {
+    width: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container h1 {
+    font-size: 22px;
+    left: 5%;
+    top: 10%;
+  }
+  .container img {
+    height: 180px;
+  }
+  .Sobre2 {
+    width: 98vw;
+    margin: 10px auto;
+    padding: 5px;
+  }
+  .Sobre2 h1 {
+    font-size: 24px;
+  }
+  .Sobre2 p {
+    font-size: 14px;
+  }
+  #sobre {
+    flex-direction: column;
+    align-items: center;
+  }
+  #sobre img {
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+  }
+  #imghome {
+    flex-direction: column;
+    gap: 5px;
+  }
+  #imghome img {
+    max-width: 98vw;
+  }
+  .containerC {
+    font-size: 14px;
+    padding: 5px;
+  }
+  .containerC img {
+    width: 80px;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer img {
+    width: 40px;
+  }
+}

@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+
+.header {
+  background-color: #668660;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+#bt5{
+
+    font-size: 20px;
+    color: white;
+    background-color: #FB9A27;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    width: 150px;
+    margin: 10px;
+    transition: transform.2s; /* Animation */
+    height: 60px;
+}
+#bt5:hover{
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+button.ajuda {
+  background-color: white;
+  color: #333;
+  border: none;
+  border-radius: 15px;
+  padding: 6px 12px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 30px;
+}
+
+button.menu {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  font-size: 50px;
+}
+
+.search-container {
+  position: relative;
+  margin-left:40px;
+}
+
+.search-container input[type="text"] {
+  padding: 6px 30px 6px 12px;
+  border-radius: 20px;
+  border: solid 1px #ffffff;
+  background-color: transparent;;
+  outline: none;
+  font-size: 20px;
+  width: 150px;
+  color: white;
+}
+.search-container ::placeholder{
+ color: white;
+}
+
+.search-container::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.search-icon {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 20px;
+  pointer-events: none;
+}
+
+.container {
+  padding: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.btn-horarios {
+  background-color: #668660;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+p{
+  margin-top: 20px;
+  max-width: 400px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #312D26;
+  font-size: 15px;
+}
+
+.mapa-section {
+  margin-top: 40px;
+}
+
+.mapa-section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.mapa-botao {
+  background-color: #668660;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.mapa-imagem {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.reservas-section {
+  margin-top: 50px;
+}
+
+.btn-reservas {
+  background-color: #6b8e6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+    font-size: 20px;
+}
+
+
+
+.menu-lateral {
+  position: fixed;
+  right: -300px; /* Oculto inicialmente */
+  top: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+  border: 3px solid orange;
+  padding: 10px;
+  transition: right 0.3s ease;
+  z-index: 9999;
+}
+
+.menu-lateral.ativo {
+  right: 0; /* Aparece */
+}
+
+.menu-lateral .fechar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.menu-lateral .perfil {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#perfil{
+ font-size: 70px;
+}
+
+.menu-lateral button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #5e7f5e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+/* Responsividade para tablets */
+@media (max-width: 900px) {
+  .container {
+    width: 95%;
+  }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+}

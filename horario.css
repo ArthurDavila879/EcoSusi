@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;}
+
+.header {
+
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+#bt5{
+
+    font-size: 20px;
+    color: white;
+    background-color: #FB9A27;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    width: 150px;
+    margin: 10px;
+    transition: transform.2s; /* Animation */
+    height: 60px;
+}
+#bt5:hover{
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+button.ajuda {
+  background-color: white;
+  color: #333;
+  border: none;
+  border-radius: 15px;
+  padding: 6px 12px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 30px;
+}
+
+button.menu {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  font-size: 50px;
+}
+
+.search-container {
+  position: relative;
+  margin-left:40px;
+}
+
+.search-container input[type="text"] {
+  padding: 6px 30px 6px 12px;
+  border-radius: 20px;
+  border: solid 1px #ffffff;
+  background-color: transparent;;
+  outline: none;
+  font-size: 20px;
+  width: 150px;
+  color: white;
+}
+.search-container ::placeholder{
+ color: white;
+}
+
+.search-container::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.search-icon {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 20px;
+  pointer-events: none;
+}
+
+
+nav{
+  background-color: #212C1F;
+}
+
+.horarios-container {
+  background: #d3d3d3;
+  border-radius: 16px;
+  padding: 30px 20px 40px 20px;
+  margin: 40px auto 0 auto;
+  
+  width: 90%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.horarios-container h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.empresas-lista {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Aumente ainda mais o espaço entre as imagens */
+  flex-direction:row ;
+}
+
+
+.empresa-card img {
+  width: 500px;
+  height: 400px;
+  margin: 10px;
+}
+
+.empresa-info {
+
+  background: #ccc;
+  border-radius: 16px;
+  border: 5px solid #ffffff;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.empresa-info span {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.empresa-info time {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.menu-lateral {
+  position: fixed;
+  right: -3000px; /* Oculto inicialmente */
+  top: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+  border: 3px solid orange;
+  padding: 10px;
+  transition: right 0.3s ease;
+  z-index: 9999;
+}
+
+.menu-lateral.ativo {
+  right: 0; /* Aparece */
+}
+
+.menu-lateral .fechar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.menu-lateral .perfil {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#perfil{
+ font-size: 70px;
+}
+
+.menu-lateral button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #5e7f5e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Responsividade para telas menores */
+@media (max-width: 900px) {
+  .empresas-lista {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .empresa-card img {
+    width: 90vw;
+    max-width: 350px;
+    height: auto;
+  }
+  .horarios-container {
+    padding: 20px 5px 30px 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 5px;
+  }
+  .header-right {
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+  }
+  .search-container {
+    margin-left: 0;
+    width: 100%;
+  }
+  .search-container input[type="text"] {
+    width: 100%;
+    font-size: 16px;
+  }
+  .horarios-container h2 {
+    font-size: 1.2rem;
+  }
+  .empresa-card img {
+    width: 100vw;
+    max-width: 250px;
+    height: auto;
+  }
+  .empresa-info h1 {
+    font-size: 1rem;
+  }
+  .menu-lateral {
+    width: 80vw;
+    min-width: 100px;
+    max-width: 300px;
+
+  }
+}
+@media (max-width: 600px) {
+  .search-container,
+  button.ajuda {
+    display: none !important;
+  }}

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+/* Estilos gerais */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Lato", sans-serif;
+}
+
+#map {
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Menu lateral */
+#menu-lateral {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+#menu-lateral ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#menu-lateral a {
+  text-decoration: none;
+  color: rgb(30, 145, 199);
+}
+#menu-lateral #imagem {
+  width: 16px;   
+  height: auto;   
+  vertical-align: middle;
+}
+/* Botão Marcar ponto */
+#btn-marcar-ponto {
+  position: absolute;
+  top: 8px;
+  right: 475px;
+  z-index: 999;
+}
+
+/* Botão Retornar */
+#btn-retornar {
+  position: absolute;
+  top: 8px;
+  right: 300px;
+  z-index: 999;
+}
+
+/* Formulário flutuante */
+#formulario {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  width: 250px;
+}
+
+#formulario.oculto {
+  display: none;
+}
+
+#form-marcacao input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.btn-remover{
+  font-size: 20px;
+  color: white;
+  background-color: #FB9A27;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  width: 150px;
+  margin: 5px;
+
+}
+
+
+
+@media (max-width: 600px) {
+  #menu-lateral {
+    left: 5px;
+    top: 10px;
+    width: 9vw;
+    min-width: 120px;
+    max-width: 98vw;
+    padding: 8px;
+    border-radius: 10px;
+  }
+  #btn-retornar{
+    right: 5px;
+    top: 5px;
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+ #btn-marcar-ponto {
+    right: 20px;
+    top: 90px;
+  
+  }}

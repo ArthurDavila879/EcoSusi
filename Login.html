@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="stylesheet" href="repositorio.css">
+    <link rel="stylesheet" href="Login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+ <div class="container">
+
+  <div class="left-side">
+    <img src="./arquivos/senha.avif" alt="reciclagem" />
+  </div>
+
+  <div class="right-side">
+
+    <button id="bt-tipo3" onclick="voltar()">Retornar</button>
+
+    <form onsubmit="onSubmit(); return false;" id="formulario" class="login_box">
+
+      <h1>PAINEL DE LOGIN</h1>
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="exemploemail@email.com" required />
+
+      <label for="senha">Senha</label>
+      <input type="password" name="senha" id="senha" placeholder="Exemplo_Senha1" required />
+
+      <div class="login_links">
+        <span>Não possui conta? <a href="#" class="criar_conta">clique aqui</a></span>
+        <a href="#" class="esqueci_senha">Esqueci minha senha</a>
+      </div>
+
+      <input type="submit" value="Enviar" id="entrar">
+<br><br>
+      <hr>
+
+      <div class="outra_opcao">
+        <img src="./arquivos/google.png" alt="Google" />
+        <img src="./arquivos/facebook.png" alt="Facebook" />
+        <img src="./arquivos/line.webp" alt="Line" />
+      </div>
+
+    </form>
+
+  </div>
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
