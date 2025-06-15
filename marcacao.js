@@ -22,10 +22,6 @@ map.on('click', function (e) {
 
   const { lat, lng } = e.latlng;
 
-  // Remove marcador anterior se houver
-  if (marcadorTemp) {
-    map.removeLayer(marcadorTemp);
-  }
 
   marcadorTemp = L.marker([lat, lng]).addTo(map);
 
