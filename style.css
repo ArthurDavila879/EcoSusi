@@ -186,8 +186,6 @@ hr {
 footer{
   padding: 10px;
   color: white;
-  display: flex;
-  flex-direction: row;
   background-color: #668660;
   flex-wrap: wrap;
   justify-content: center;
